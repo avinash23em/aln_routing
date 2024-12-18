@@ -36,7 +36,7 @@ function App() {
       navigate("/")
     }
     return <div>
-      welcome to class 12 prog
+      welcome to class 12 prog of this batch 
       <button on onClick={redirect}> redirect to home</button>
     </div>
   }
