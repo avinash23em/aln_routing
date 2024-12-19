@@ -1,5 +1,9 @@
 import { use } from 'react'
 import { useState } from 'react'
+import Layout from "./components/Layout";
+import Navbar from "./components/Navbar";
+import Exams from './components/Exams';
+import Programs from './components/Programs';
 import { BrowserRouter,Routes,Route, Link,useNavigate } from 'react-router-dom'
 
 function App() {
@@ -8,15 +12,12 @@ function App() {
   return (
     <div>
     <BrowserRouter>
-    <Link to='/'> allen </Link>
-    <Link to='/class 11'>class 11</Link>
-    <Link to='/class 12'> class 12</Link>
-    <Routes>
-      <Route path="/class 11" element={<Class11prog/>}/>
-      <Route path="/class 12" element={<Class12prog/>}/>
-      <Route path="/" element={<Landing/>}/>
-
-    </Routes>
+    <Navbar/>
+      <Routes>
+        <Route path="/layout" element={<Layout/>}/>
+        <Route path="/exams" element={<Exams/>}/>
+        <Route path="/programs" element={<Programs/>}/>
+      </Routes>
     </BrowserRouter>
     </div>
     
