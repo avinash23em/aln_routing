@@ -4,7 +4,7 @@ function Navbar(){
     return(
         <nav>
             <Link to="/exams"> Exams</Link>
-            <Link to="/programs"> programs</Link>
+            <Link to="/ programs "> programs</Link>
             <Link to="/tests"> test</Link>
         </nav>
     )
