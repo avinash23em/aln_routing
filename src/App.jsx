@@ -23,25 +23,11 @@ function App() {
     
   )
 
-  function Landing(){
-      return <div> welcome to allen </div>
-  }
-  function Class11prog(){
-    return <div>
-      welcome to class 11 prog
-    </div>
-  }
-  function Class12prog(){
-    const navigate=useNavigate();
-    function redirect(){
-      navigate("/")
-    }
-    return <div>
-      welcome to class 12 prog of this batch 
-      <button on onClick={redirect}> redirect to home</button>
-    </div>
+  
+    
+   
   }
 
-}
+
 
 export default App
